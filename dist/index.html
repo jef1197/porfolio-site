@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Jef Ogues Porfolio Website">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Jef Ogues">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jef Ogues</title>
+        <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" type="text/css" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/themes/splide-skyblue.min.css" />
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/themes/splide-skyblue.min.css"></noscript>
+        <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        <header>
+            <div class="logo">
+                <a href="#page-1">Jef Ogues</a>
+            </div>
+            <nav class="navbar-desktop">
+                <a href="#page-2">About</a>
+                <a href="#page-3">Projects</a>
+                <a href="#page-4">Contact</a>
+            </nav>
+        </header>
+        
+        <main id="fullpage">
+
+            <!-- Landing/Hero Section -->
+            <section class="hero pg-page pg-active"  data-anchor="Page 1">
+                <div id="tsparticles" class="lazyload">
+                    <div class="mainTitle">
+                        <h1>JEF OGUES</h1>
+                        <h2>WEB DEVELOPER</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="pg-page" data-anchor="Page 2">
+                <div class="aboutPage">
+                    <h1 class="title" id="title-about">About Me</h1>
+                    <div class="about-text-content">
+                        <p>Hi, I'm Jef,</p>
+                        <p>An asipiring Web Designer & Developer</p>
+                        <p>Currently in my last semester in Durham College</p>
+                        <a class="button" href="../assets/Jef_Resume.pdf" target="_blank">                        
+                            <button>Download Resume</button>
+                        </a>
+                    </div>
+                    <div class="about-image">
+                        <figure>                    
+                            <img class="lazyload" width="500px" height="667px" src="../assets/me.webp" alt="me"/>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Section -->
+            <section class="pg-page " data-anchor="Page 3">
+                <div class="projectPage">
+                    <h1 class="title" id="title-project">Projects</h1>
+                    <div class="skills-content">
+                        <div class="skill-container">
+                            <img width="75px" height="75px" src="/assets/htmlIcon.png" alt="HTML">
+                            <img width="75px" height="75px" src="/assets/cssIcon.png" alt="CSS">
+                            <img width="75px" height="75px" src="/assets/jsIcon.png" alt="JavaScript">
+                            <img width="75px" height="75px" src="/assets/nodeIcon.png" alt="Node.js">
+                        </div>
+                        <div class="skill-container">
+                            <img width="75px" height="75px" src="/assets/gitIcon.png" alt="Git">
+                            <img width="75px" height="75px" src="/assets/reactIcon.png" alt="React">
+                            <img width="75px" height="75px" src="/assets/vueIcon.png" alt="Vue">
+                            <img width="75px" height="75px" src="/assets/github.png" alt="Github">
+                        </div>
+                    </div>
+                    <div class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide card">
+                                    <img class="lazyload"  src="/assets/weatherbg.png" alt="weather app preview"/>
+                                    <div>
+                                        <h2>Weather App </h2>
+                                        <p>Shows current weather and additional info on the requested location</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/jef1197/odin-weather" target="_blank">View Code</a>
+                                        <a href="https://jefogues.com/weather_app/" target="_blank">Live Preview</a>
+                                    </div>
+                                </li>
+                                <li class="splide__slide card">                                        
+                                    <img class="lazyload" src="/assets/rpsThumb.png" alt="rock paper scissors preview"/>
+                                    <div>
+                                        <h2>Rock Paper Scissors</h2>
+                                        <p>Play the classic rock paper scissors game against a computer. First to 5 wins!</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/jef1197/rock-paper-scissors" target="_blank">View Code</a>
+                                        <a href="https://jefogues.com/gameRPS/" target="_blank">Live Preview</a>
+                                    </div>
+                                </li>
+                                <li class="splide__slide card">
+                                    <img class="lazyload" src="/assets/toDoListThumb.png" alt="to do list preview"/>
+                                    <div>
+                                        <h2>To Do list</h2>
+                                        <p>Simple To Do List. Able to create and manage new projects and task</p>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/jef1197/new-Todolist" target="_blank">View Code</a>
+                                        <a href="https://jefogues.com/toDoList/" target="_blank">Live Preview</a>
+                                    </div>
+                                </li>
+                                <li class="splide__slide card">
+                                    <!-- <img src="/assets/.png"/> -->
+                                    <div>
+                                        <h2>More Coming Soon...</h2>
+                                        <!-- <p></p> -->
+                                    </div>
+                                    <!-- <div>
+                                        <a href="https://github.com/jef1197/" target="_blank">View Code</a>
+                                        <a href="https://jefogues.com//" target="_blank">Live Preview</a>
+                                    </div> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="pg-page " data-anchor="Page 4">
+                <div class="contactPage">
+                    <h1 class="title" id="title-contact">Contact Me</h1>
+                    <div class="contact-info-card">
+                        <a href="https://github.com/jef1197" target="_blank">Github</a>
+                        <a href="https://www.linkedin.com/in/jef-ogues-123a05230/" target="_blank">LinkedIn</a>
+                        <a href="assets/Jef_Resume.pdf" target="_blank">Resume</a>
+                        <a href="mailto:jef.ogu@gmail.com?Subject=Hello!" target="_blank">jef.ogu@gmail.com</a>
+                    </div>
+                    <div class="form-container">
+                        <form aria-required="true"  method="POST" action="/form.php" id="contact-form">
+                            <!-- <h1>Send me a <span>Message!</span></h1> -->
+                            <label for="name">Name</label>
+                            <input type="text" required name="name" id="name" placeholder="Name">
+                            <label for="email">Email</label>
+                            <input type="email" required name="email" id="email" placeholder="Email">
+                            <label for="message">Message</label>
+                            <textarea name="message" required id="message" placeholder="Message"></textarea>
+                            <input type="submit" name="submit" value="Send!" id="sumbit">
+                        </form>
+                    </div>
+                    <footer>
+                        <p>Designed and Developed by Jef Ogues - © 2022 </p>
+                    </footer>
+                </div>
+            </section>
+        </main>
+
+        <div class="bg">
+            <!-- <img class="bg-item1" height="800px" src="/assets/bg1.png"> -->
+            <img class="bg-item2" width="" height="100%" src="/assets/bg2.png" alt="left-side-design">
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+        <script src="bundle.js"></script>
+    </body>
+</html>

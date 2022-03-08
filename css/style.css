@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Rubik', sans-serif;}
+
+/* Nav Bar */
+
+header{
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    width: 100vw;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo,  nav {
+    padding-left: 50px;
+    padding-right: 25px;
+    display: flex;
+}
+
+.navbar-desktop a{
+    font-size: 1.3rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+/* Slide in Animation*/
+.navbar-desktop a::after, .contact-info-card a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    width: 100%;
+    height: 0.1em;
+    background-color: #C33C54;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+.navbar-desktop a, .contact-info-card a {
+    overflow: hidden;
+}
+
+.navbar-desktop a:hover, .contact-info-card a:hover,
+.navbar-desktop a:focus ,.contact-info-card a:focus{
+    color: #C33C54;
+}
+
+.navbar-desktop a::after {
+    opacity: 1;
+    transform: translate3d(-101%, 0, 0);
+}
+
+.navbar-desktop a:hover::after,
+.navbar-desktop a:focus::after{
+    transform: translate3d(0, 0, 0);
+}
+
+/* Landing Page */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    
+}
+
+#tsparticles{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    z-index: -1;
+}
+
+.mainTitle {
+    height: 100%;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    line-height: 130%;
+    font-weight: 700;
+    position: absolute;
+}
+
+.mainTitle h2{
+    font-size: 5rem;
+    color: #C33C54;
+}
+
+/* About Page */
+
+.aboutPage{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.about-text-content{
+    margin-left: 10%;
+    margin-top: 50px;
+    width: 30%;
+    line-height: 180%;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.about-text-content p:nth-child(3){
+    margin-bottom: 20px;
+}
+
+.about-image{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: rgb(255, 50, 87);
+    font-size: 7rem;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 1;
+}
+
+figure {
+    width: 450px;
+    /* box-shadow: 25px 25px #C33C54, -25px -25px black; */
+    box-shadow: 25px 25px 5px 5px #C33C54, -25px -25px 5px 5px black;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Project Page */
+
+.projectPage{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    background-color: #fff;
+    color: white;
+    padding: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card div:not(:nth-child(3)) {
+    background-color: #141928da;
+    border-radius: 10px;
+    width: 35%;
+}
+.card div {
+    padding: 20px;
+    color: white;
+}
+
+.card div p {
+    margin-top: 15px;
+}
+
+.splide {
+    width : 60vw;
+    /* background-color: #141928; */
+    box-shadow: 15px 15px 5px  black;
+}
+
+.skills-content {
+    margin-left: 10%;
+    position: relative;
+    top: 90px;
+    width: 25%;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.skill-container img {
+    transition: 1s;
+}
+
+.skill-container img:hover {
+    
+    transform: scale(1.5);
+}
+
+.skill-container img:last-child {
+    border-radius: 100%;
+}
+
+/* Contact Page */
+
+.contactPage{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info-card {
+    width: 30%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    line-height: 250%;
+}
+
+.contact-info-card a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white
+}
+
+.form-container {
+    width: 45%;
+    height: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color: white;
+    padding-left: 10%;
+}
+
+form h1 {
+    margin-bottom: 15px;
+}
+
+h1 span {
+    color: #ff375b;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input:not([type=submit]){
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+}
+
+input[type=submit] {
+    width: 100px;
+    margin-top: 15px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    outline: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 40px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* Section Styles */
+
+section {
+    height: 100vh;
+}
+
+/* Background */
+
+.bg {
+    height: 100vh;
+    width: 100%;
+    background-color: #141928;
+    z-index: -100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bg .bg-item1 {
+    /* width: 100%; */
+    height: auto;
+    position: fixed;
+    right: 0;
+}
+
+.bg .bg-item2{
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+
+
+/* Button Design */
+
+a button, input[type=submit], .card a {
+    padding: 15px;
+    border-radius:  100px;
+    outline: none;
+    border: none;
+    background-color:  #C33C54;;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+a button:hover, .card a:hover{
+    background-color:  white;
+    color: #C33C54;
+    transform: translateY(-10px) ;
+    transition: 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color:  white;
+    color: #C33C54;
+    transition: 0.5s;
+}
+
+/* Side Navigation bar */
+
+.pg-vertical .pg-pips {
+    left: 0;
+    top: 50%;
+    transform: translate3d(0px, -50%, 0px);
+    position: fixed;
+    z-index: 1000;
+}
+
+.pg-vertical .pg-pips li {
+    display: block;
+}
+
+.pg-pips ul li {
+    width: 14px;
+    height: 14px;
+    margin: 7px;
+    position: relative;
+}
+
+.pg-pips ul li a {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+}
+
+.pg-pips ul li:hover a {
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+}
+
+.pg-pips ul li a.active, .pg-pips ul li:hover a.active {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    margin: -7px 0 0 -7px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 450px) and (min-width: 0px) {
+    /* NavB bar */
+
+    .logo,  nav {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+    }
+
+    .navbar-desktop {
+        display: none;
+    }
+
+    .mainTitle {
+        font-size: 2rem;
+        text-align: center;
+        padding-left: 0;
+        line-height: 200%;
+        width: 100%;
+        /* position: absolute; */
+    }
+
+    .mainTitle h2 {
+        font-size: 2rem;
+    }
+
+    /* about me */
+
+    .title {
+        font-size: 3.5rem;
+        top: 15%;
+        left: 10%;
+        margin: auto
+    }
+
+    .aboutPage{
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .about-text-content{
+        margin-left: 0%;
+        margin-top: 10px;
+        width: 70%;
+        line-height: 180%;
+        padding: 25px;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .about-image{
+        width: 75%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    /* Project Page */
+
+    .projectPage{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #title-project {
+        top: 5%;
+        /* font-size: 2.5rem; */
+        left: 5%;
+    }
+
+    .splide {
+        width : 95vw;
+    }
+
+    .skills-content {
+        margin-left: 0%;
+        top: 50px;
+        width: 100%;
+    }
+
+    .skill-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+
+    .skill-container img {
+        /* width: 70px;
+        height: 70px; */
+        transition: 1s;
+    }
+    
+    /* Contact Page */
+
+    .contactPage{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-info-card {
+        width: 80%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        line-height: 150%;
+        margin-bottom: 25px;
+        margin-top: 50px;
+    }
+
+    .contact-info-card a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white
+    }
+
+    .form-container {
+        width: 100%;
+        height: 40%;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input:not([type=submit]){
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    input[type=submit] {
+        margin-top: 10px;
+    }
+
+    textarea {
+        height: 2em;
+    }
+
+    #title-contact{
+        font-size: 3rem;
+        top: 15%;
+    }
+
+    footer {
+        padding-bottom: 20px;
+        font-size: .9rem;
+    }
+
+    /* button */
+
+    a button, input[type=submit], .card a {
+        padding: 10px;
+        font-size: 1rem;
+        
+    }
+
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 451px) {
+
+    /* NavB bar */
+
+    .logo,  nav {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    }
+
+    .navbar-desktop {
+    display: none;
+    }
+
+
+    .mainTitle {
+    font-size: 4rem;
+    text-align: left;
+    line-height: 200%;
+    width:80%;
+    }
+    .mainTitle h2{
+    font-size: 4rem;
+    }
+
+     /* about me */
+
+    .title {
+        font-size: 5rem;
+        top: 15%;
+        left: 10%;
+        margin: auto
+    }
+
+    .about-text-content{
+        margin-left: 0%;
+        margin-top: 0px;
+        width: 40%;
+        line-height: 180%;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .about-image{
+        width: 60%;
+        margin-top: 50px;
+    }
+
+     /* Project Page */
+
+     .projectPage{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #title-project {
+        top: 5%;
+    }
+
+    .splide {
+        width : 95vw;
+    }
+
+    .skills-content {
+        margin-left: 0%;
+        top: 50px;
+        width: 60%;
+    }
+
+    .skill-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 25px;
+    }
+
+    
+}
+
