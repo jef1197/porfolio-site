@@ -1,5 +1,5 @@
 import '../css/style.css';
-import torontoImg from '../assets/toronto.webp'
+import torontoImg from '../dist/assets/toronto.webp'
 
 
 // Fullpage scroll js
