@@ -1,7 +1,6 @@
 import '../css/style.css';
 import torontoImg from '../dist/assets/toronto.webp'
 
-
 // Fullpage scroll js
 
 new Pageable("#fullpage", {
@@ -9,6 +8,25 @@ new Pageable("#fullpage", {
     delay: 100,
     freeScroll: true,
 });
+
+// project image slider
+console.log('here 12')
+
+document.addEventListener( 'DOMContentLoaded', function() {
+    console.log('here')
+    var splide = new Splide( '.splide', {
+        type   : 'loop',
+        padding: '2rem',
+        drag   : true,
+        autoplay: true,
+        interval: 5000,
+        pauseOnHover: true,
+        lazyLoad: 'nearby',
+        cover      : true,
+		height: '50vh',
+    } );
+    splide.mount();
+} );
 
 // partcle background
 $("#tsparticles")
@@ -131,63 +149,5 @@ $("#tsparticles")
             detectRetina: true,
         },
     );
-
-// project image slider
-
-// new Splide( '.splide' ).mount();
-
-document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide', {
-        type   : 'loop',
-        padding: '2rem',
-        drag   : true,
-        autoplay: true,
-        interval: 5000,
-        pauseOnHover: true,
-        lazyLoad: 'nearby',
-        cover      : true,
-		height: '50vh',
-    } );
-    splide.mount();
-} );
-
-// form validation
-
-const constraints = {
-    name: {
-        presence: { allowEmpty: false }
-    },
-    email: {
-        presence: { allowEmpty: false },
-        email: true
-    },
-    message: {
-        presence: { allowEmpty: false }
-    }
-};
-
-const form = document.getElementById('contact-form');
-
-form.addEventListener('submit', function (event) {
-    const formValues = {
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        message: form.elements.message.value
-    };
-
-const errors = validate(formValues, constraints);
-
-if (errors) {
-    event.preventDefault();
-    const errorMessage = Object
-        .values(errors)
-        .map(function (fieldValues) { 
-            return fieldValues.join(', ')
-        })
-        .join("\n");
-
-    alert(errorMessage);
-}
-}, false);
 
 console.log('working')
